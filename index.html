@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Firm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="animated fadeIn colorful">
+        <h1>Software Development Firm</h1>
+    </header>
+    
+    <section id="home" class="animated slideInFromBottom colorful">
+        <h2>Welcome to Our Firm</h2>
+        <p>We are a leading software development firm committed to delivering high-quality solutions.</p>
+    </section>
+    
+    <section id="services" class="animated slideInFromBottom colorful">
+        <h2>Our Services</h2>
+        <p>Here are some of the services we offer:</p>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Custom Software Development</li>
+        </ul>
+    </section>
+    
+    <section id="project-estimator" class="animated slideInFromBottom colorful">
+        <h2>Project Cost Estimator</h2>
+        <p>Use the form below to get an estimate for your project:</p>
+        <form id="project-cost-form">
+            <label for="project-type">Project Type:</label>
+            <select id="project-type">
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile App Development</option>
+                <option value="custom">Custom Software Development</option>
+            </select><br>
+            <label for="project-size">Project Size:</label>
+            <input type="number" id="project-size" min="1" required><br>
+            <button type="submit">Get Estimate</button>
+        </form>
+        <div id="cost-result"></div>
+    </section>
+    
+    <section id="contact" class="animated slideInFromBottom colorful">
+        <h2>Contact Us</h2>
+        <p>Fill out the form below to get in touch:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="contact-result"></div>
+    </section>
+
+    <footer class="animated slideInFromBottom colorful">
+        <p>&copy; 2024 Software Development Firm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
